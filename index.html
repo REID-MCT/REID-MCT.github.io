@@ -61,11 +61,11 @@ Camera ready deadline: 2017 April 27
 
         </br ><p><b>Navigation:</b>
         <ul style="margin-top:-10px;">
+          <li><a href="#program">Program(Optional)</a></li>
           <li><a href="#cfp">Call for papers</a></li>
           <li><a href="#motivation">Problem definition and motivation</a></li>   
           <li><a href="#submission">Submission</a></li>          
-          <li><a href="#invited">Keynote speakers</a></li>          
-          <li><a href="#program">Session(Optional)</a></li>
+          <li><a href="#invited">Keynote speakers</a></li>           
           <li><a href="#people">People involved</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul></p>
@@ -88,94 +88,14 @@ July 2017, Honolulu</h3>
 
 <hr />
 
-<h3>
-<a id="cfp" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Call for papers</h3>
-This one day workshop will host invited speakers, poster sessions and oral presentations. We encourage authors to explore pollination between the fields of ReID and MTMCT and take on research questions, rather than just obtaining state-of-the-art results on benchmarks. Examples of such questions are:<br>
-<ul>
-  <li>How much do initial detections influence MTMCT or ReID?</li>
-  <li>How and which ReID descriptors can be used by MTMCT systems?</li>
-  <li>What can we learn by evaluating a MTMCT system in terms of ReID, and vice-versa?</li>
-  <li>What makes these problems hard (and easy)?</li>
-  <li>How can ReID and MTMCT benefit each other?</li>
-  <li>How can MTMCT and ReID capitalize on recent large-scale datasets?</li>
-  <li>How to deal with large-scale indexing/optimization in ReID and MTMCT?</li>
-  <li>Do we need largely annotated datasets for ReID and MTMCT?</li>
-  <li>Do semantic attributes help in matching identities in ReID and MTMCT?</li>
-  <li>How can re-ranking schemes improve ReID performance?</li>
-</ul>
-
-<h3>
-<a id="motivation" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Problem definitions and motivation</h3>
-Let a query be an image that tightly bounds a single instance of a target of interest (people, vehicles, etc.). Assume that a gallery contains images of several targets in this format as well as distractor images with arbitrary content. <i>Target re-identification</i> retrieves all and only the gallery images of the same target as the query.
-<br><br>
-Given a set of videos taken by multiple cameras, <i>multi-target multi-camera tracking</i> places tight bounding boxes around all targets in the videos and partitions the boxes into sets called trajectories. A trajectory is the set of all boxes that bound a unique target, ordered by time.
-<br><br>
-These two problems are clearly different. However, they share several common aspects as well. <a href="#motivation" id="toggle-link">Here</a>, you can find some of the (dis)similarities that we could think of. Can you come up with more?<br><br>
-
-    <script>
-      $("a#toggle-link").click(function() {
-        $("div#dis-similarities").toggle("slow");
-      });
-    </script>
-
-<div id="dis-similarities" style="display: none">
-  <b>Some differences:</b>
-  <ul>
-    <li>The gallery in target re-identification may or may not be a set of videos and both targets and queries are assumed to have been isolated ahead of time. The input to multi-target multi-camera tracking on the other hand is necessarily a set of videos.</li>
-    <li>Multi-target multi-camera tracking matches all targets symmetrically while target re-identification distinguishes between query and response explicitly.</li>
-  </ul>
-  
-  <b>Some similarities:</b>
-  <ul>
-    <li>They assume a semantic notion of “identity” in that only ground truth can tell if the targets in two bounding boxes share the same identity.</li>
-    <li>They could benefit from a detector that separates targets from non-targets.</li>
-    <li>When the gallery in target re-identification is a set of videos, both problems can use similar pre-processing techniques. These might rely on knowing the camera topology, considering time elapsed between observations, modeling changes in illumination and viewpoint across cameras, etc.</li>
-    <li>Both problems require annotated databases of videos or images and some databases can work for both problems.</li>
-    <li>Some components of the solution to either problem can be used to solve the other.</li>
-  </ul>
-</div>
-
-
-<h3>
-<a id="submission" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Submission</h3>
-<p>
-  To submit a new paper to the workshop, you have to do so through the <a href="https://cmt3.research.microsoft.com/REIDMTMCT2017">CMT website</a>. The workshop paper submissions should be in the same format as the main conference. Please refer to the <a href="http://cvpr2017.thecvf.com/submission/main_conference/author_guidelines">CVPR 2017 author guidelines</a> for more details.
-</p>
-
-<h3>
-<a id="invited" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Invited speakers</h3>
-
-<img src="img/schmid.jpg" height="60px" style="float: left; margin-right: 10px;"/><p><b>Cordelia Schmid, INRIA</b></br> 
-Title TBA</p>
-
-<img src="img/wang.jpg" height="60px" style="float: left; margin-right: 10px;"/><p><b>Xiaogang Wang, Chinese University of Hong Kong</b> </br>
-Title TBA</p>
-
-<img src="img/roy-chowdhury.jpg" height="60px" style="float: left; margin-right: 10px;"/><p><b>Amit Roy-Chowdhury, University of California Riverside</b> </br>
-Title TBA</p>
-
-<img src="img/shah.jpg" height="60px" style="float: left; margin-right: 10px;"/><p><b>Mubarak Shah, University of Central Florida</b></br>
-Title TBA</p>
-
-<img src="img/shen.jpg" height="60px" style="float: left; margin-right: 10px;"/><p><b>Chunhua Shen, University of Adelaide</b></br>
-Title TBA</p>
-
-<img src="img/zheng.jpg" height="60px" style="float: left; margin-right: 10px;"/><p><b>Wei-Shi Zheng, Sun Yat-sen University</b></br>
-Title TBA</p>
-
-<img src="img/milan.jpg" height="60px" style="float: left; margin-right: 10px;"/><p><b>Anton Milan, University of Adelaide</b></br>
-Title TBA</p>
-
-<img src="img/leal-taixe.jpg" height="60px" style="float: left; margin-right: 10px;"/><p><b>Laura Leal-Taixé, Technical University Munich</b> </br> Title TBA</p>
-
 <br>
 <h3>
-<a id="program" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Session
+<a id="program" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Program
 (Optional)</h3>
-The following program will change according to the number of accepted papers and assigned oral presentations.
+
 <table style="margin-top: 10px;">
   <tr>
-	<td style="width:10%; text-align:center">Start Time</td>
+	<td style="width:17%; text-align:center">Start Time</td>
 	<td style="text-align:center;" >Paper/Talk Title</td>
 	<td>Speaker/Author(s)</td>
   </tr>
@@ -321,6 +241,90 @@ The following program will change according to the number of accepted papers and
 </table>
 
 <br>
+
+
+
+<h3>
+<a id="cfp" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Call for papers</h3>
+This one day workshop will host invited speakers, poster sessions and oral presentations. We encourage authors to explore pollination between the fields of ReID and MTMCT and take on research questions, rather than just obtaining state-of-the-art results on benchmarks. Examples of such questions are:<br>
+<ul>
+  <li>How much do initial detections influence MTMCT or ReID?</li>
+  <li>How and which ReID descriptors can be used by MTMCT systems?</li>
+  <li>What can we learn by evaluating a MTMCT system in terms of ReID, and vice-versa?</li>
+  <li>What makes these problems hard (and easy)?</li>
+  <li>How can ReID and MTMCT benefit each other?</li>
+  <li>How can MTMCT and ReID capitalize on recent large-scale datasets?</li>
+  <li>How to deal with large-scale indexing/optimization in ReID and MTMCT?</li>
+  <li>Do we need largely annotated datasets for ReID and MTMCT?</li>
+  <li>Do semantic attributes help in matching identities in ReID and MTMCT?</li>
+  <li>How can re-ranking schemes improve ReID performance?</li>
+</ul>
+
+<h3>
+<a id="motivation" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Problem definitions and motivation</h3>
+Let a query be an image that tightly bounds a single instance of a target of interest (people, vehicles, etc.). Assume that a gallery contains images of several targets in this format as well as distractor images with arbitrary content. <i>Target re-identification</i> retrieves all and only the gallery images of the same target as the query.
+<br><br>
+Given a set of videos taken by multiple cameras, <i>multi-target multi-camera tracking</i> places tight bounding boxes around all targets in the videos and partitions the boxes into sets called trajectories. A trajectory is the set of all boxes that bound a unique target, ordered by time.
+<br><br>
+These two problems are clearly different. However, they share several common aspects as well. <a href="#motivation" id="toggle-link">Here</a>, you can find some of the (dis)similarities that we could think of. Can you come up with more?<br><br>
+
+    <script>
+      $("a#toggle-link").click(function() {
+        $("div#dis-similarities").toggle("slow");
+      });
+    </script>
+
+<div id="dis-similarities" style="display: none">
+  <b>Some differences:</b>
+  <ul>
+    <li>The gallery in target re-identification may or may not be a set of videos and both targets and queries are assumed to have been isolated ahead of time. The input to multi-target multi-camera tracking on the other hand is necessarily a set of videos.</li>
+    <li>Multi-target multi-camera tracking matches all targets symmetrically while target re-identification distinguishes between query and response explicitly.</li>
+  </ul>
+  
+  <b>Some similarities:</b>
+  <ul>
+    <li>They assume a semantic notion of “identity” in that only ground truth can tell if the targets in two bounding boxes share the same identity.</li>
+    <li>They could benefit from a detector that separates targets from non-targets.</li>
+    <li>When the gallery in target re-identification is a set of videos, both problems can use similar pre-processing techniques. These might rely on knowing the camera topology, considering time elapsed between observations, modeling changes in illumination and viewpoint across cameras, etc.</li>
+    <li>Both problems require annotated databases of videos or images and some databases can work for both problems.</li>
+    <li>Some components of the solution to either problem can be used to solve the other.</li>
+  </ul>
+</div>
+
+
+<h3>
+<a id="submission" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Submission</h3>
+<p>
+  To submit a new paper to the workshop, you have to do so through the <a href="https://cmt3.research.microsoft.com/REIDMTMCT2017">CMT website</a>. The workshop paper submissions should be in the same format as the main conference. Please refer to the <a href="http://cvpr2017.thecvf.com/submission/main_conference/author_guidelines">CVPR 2017 author guidelines</a> for more details.
+</p>
+
+<h3>
+<a id="invited" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Invited speakers</h3>
+
+<img src="img/schmid.jpg" height="60px" style="float: left; margin-right: 10px;"/><p><b>Cordelia Schmid, INRIA</b></br> 
+Title TBA</p>
+
+<img src="img/wang.jpg" height="60px" style="float: left; margin-right: 10px;"/><p><b>Xiaogang Wang, Chinese University of Hong Kong</b> </br>
+Title TBA</p>
+
+<img src="img/roy-chowdhury.jpg" height="60px" style="float: left; margin-right: 10px;"/><p><b>Amit Roy-Chowdhury, University of California Riverside</b> </br>
+Title TBA</p>
+
+<img src="img/shah.jpg" height="60px" style="float: left; margin-right: 10px;"/><p><b>Mubarak Shah, University of Central Florida</b></br>
+Title TBA</p>
+
+<img src="img/shen.jpg" height="60px" style="float: left; margin-right: 10px;"/><p><b>Chunhua Shen, University of Adelaide</b></br>
+Title TBA</p>
+
+<img src="img/zheng.jpg" height="60px" style="float: left; margin-right: 10px;"/><p><b>Wei-Shi Zheng, Sun Yat-sen University</b></br>
+Title TBA</p>
+
+<img src="img/milan.jpg" height="60px" style="float: left; margin-right: 10px;"/><p><b>Anton Milan, University of Adelaide</b></br>
+Title TBA</p>
+
+<img src="img/leal-taixe.jpg" height="60px" style="float: left; margin-right: 10px;"/><p><b>Laura Leal-Taixé, Technical University Munich</b> </br> Title TBA</p>
+
+
 
 <h3>
 <a id="people" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>People involved</h3>
